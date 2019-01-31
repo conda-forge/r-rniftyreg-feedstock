@@ -1,4 +1,4 @@
-{% set version = "2.6.1" %}
+{% set version = "2.6.5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/RNiftyReg_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/RNiftyReg/RNiftyReg_{{ version }}.tar.gz
-  sha256: b206c8426aec7535ae45851baa3835b83930cc67f468586d8232802f60bb2b1e
+  sha256: 937fa65456bb53873a53a6cfcbd8d1a8f80dffb007bfdfacec76ee4655444136
 
 build:
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   skip: true  # [win32]
 
   rpaths:
