@@ -1,4 +1,4 @@
-{% set version = "2.6.7" %}
+{% set version = "2.6.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RNiftyReg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RNiftyReg/RNiftyReg_{{ version }}.tar.gz
-  sha256: 9f8f32c78f0328b99be79af6ce5c3c924bc799207abd3402134ab609f68ba6e3
+  sha256: c409d5f8a73dec59ddc1961315b58903bb8b634154cee98be1f2707a7f9191a6
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -57,10 +57,10 @@ test:
 about:
   home: https://github.com/jonclayden/RNiftyReg
   license: GPL-2
-  summary: Provides an 'R' interface to the 'NiftyReg' image registration tools <http://sourceforge.net/projects/niftyreg/>.
-    Linear and nonlinear registration are supported, in two and three dimensions.
+  summary: Provides an 'R' interface to the 'NiftyReg' image registration tools <http://sourceforge.net/projects/niftyreg/>. Linear and nonlinear registration are
+    supported, in two and three dimensions.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
