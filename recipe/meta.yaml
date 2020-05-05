@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,16 +25,16 @@ requirements:
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}sed               # [win]
-    - {{posix}}grep              # [win]
-    - {{posix}}autoconf
-    - {{posix}}automake          # [not win]
-    - {{posix}}automake-wrapper  # [win]
-    - {{posix}}pkg-config
-    - {{posix}}make
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}sed               # [win]
+    - {{ posix }}grep              # [win]
+    - {{ posix }}autoconf
+    - {{ posix }}automake          # [not win]
+    - {{ posix }}automake-wrapper  # [win]
+    - {{ posix }}pkg-config
+    - {{ posix }}make
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-rnifti >=0.4.0
@@ -43,7 +43,7 @@ requirements:
     - r-ore
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-rnifti >=0.4.0
     - r-rcpp >=0.11.0
     - r-rcppeigen
