@@ -3,6 +3,7 @@ About r-rniftyreg-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rniftyreg-feedstock/blob/main/LICENSE.txt)
 
+
 About r-rniftyreg
 -----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/jonclayden/RNiftyReg
 Package license: GPL-2.0-only
 
 Summary: Provides an 'R' interface to the 'NiftyReg' image registration tools <http://sourceforge.net/projects/niftyreg/>. Linear and nonlinear registration are supported, in two and three dimensions.
+
 About r-rniftyreg
 -----------------
 
