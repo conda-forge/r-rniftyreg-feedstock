@@ -42,6 +42,7 @@ requirements:
     - r-rcpp
     - r-rcppeigen
     - r-ore
+    - zlib                         # [win]
   run:
     - r-base
     - r-rnifti
