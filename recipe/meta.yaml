@@ -16,6 +16,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -41,14 +45,12 @@ requirements:
     - r-rnifti
     - r-rcpp
     - r-rcppeigen
-    - r-ore
     - zlib                         # [win]
   run:
     - r-base
     - r-rnifti
     - r-rcpp
     - r-rcppeigen
-    - r-ore
 
 test:
   commands:
